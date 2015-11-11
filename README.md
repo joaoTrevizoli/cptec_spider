@@ -6,7 +6,7 @@ Before running please read carefully the software requisites.
  
 * Version 0.1
 * Project build to access cptec, an brazilian weather center, download 11 days
-numeric forecast png graphics and and autonomously analyse it.
+numeric forecast png graphics, and autonomously analyse it.
  
 ### Setup ###
 
