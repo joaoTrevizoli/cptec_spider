@@ -1,3 +1,4 @@
+/image_analyser/data/
 /data/
 ### VirtualEnv template
 # Virtualenv
@@ -79,7 +80,7 @@ coverage.xml
 *.log
 
 # Sphinx documentation
-docs/_build/
+../docs/_build/
 
 # PyBuilder
 target/

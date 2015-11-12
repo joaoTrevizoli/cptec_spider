@@ -1,18 +1,38 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+.. module:: cptec_bots.request_handler
+    :platform: Unix, Osx, Windows
+
+.. moduleauthor:: Joao Trevizoli Esteves<joao@lab804.com.br>
+"""
+
+
+import requests
 
 __author__ = 'joao'
 
-import requests
-import re
 
 class CptecException(Exception):
+    """Cptec webserver Exceptions
+
+    Raises exceptions when cptec web server
+    returns an status code different from 200
+
+    :raises: CptecException
+    """
     pass
 
 
 class RequestHandler(object):
-    """
-    Handles requests from cptec servers
+    """Handles requests
+
+        This class is the base class for connecting
+        with cptecs webserver, all the requests classes
+        are based here.
+
+        :param: pk: Primary key
+        :type: pk: int
     """
 
     base_url = 'http://previsaonumerica.cptec.inpe.br/golMapWeb/ProcessMeteoId?id={}&modelo=Eta15P'
@@ -27,6 +47,16 @@ class RequestHandler(object):
 
     @data.setter
     def data(self, data):
+        """Response data object
+
+        This setter sets data to the response object
+        from the get method from server. it uses the
+        primary key to build the url for the request.
+
+        Sets:
+
+            data: server object response.
+        """
         self.__data = data
         try:
             data_request = requests.get(self.base_url.format(self.pk))
