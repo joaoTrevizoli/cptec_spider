@@ -6,12 +6,12 @@
 
 .. moduleauthor:: Joao Trevizoli Esteves<joao@lab804.com.br>
 """
-__author__ = 'joao'
-
 
 import re
 
 from . import RequestHandler
+
+__author__ = 'joao'
 
 
 class CityNameException(Exception):

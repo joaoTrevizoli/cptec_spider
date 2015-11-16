@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-__author__ = 'joao'
-
 from cptec_crawling.cptec_bots.text_search import PlaceTextFinder
 from cptec_crawling.cptec_bots.download import FileSave
-from cptec_crawling.image_analyser.img_analyser import GraphInterpreter
+
+__author__ = 'joao'
+
 
 if __name__ == '__main__':
     _pks = [586, 2467, 4176, 4263]
@@ -18,10 +18,3 @@ if __name__ == '__main__':
             print "terminado"
         except Exception as e:
             print e
-
-    humidity_arara = GraphInterpreter('araraquara/araraquara_11_11_2015.png',
-                                (0, 10),
-                                'rain')
-
-    print type(humidity_arara.np_image_matrix())
-    humidity_arara.save_values()

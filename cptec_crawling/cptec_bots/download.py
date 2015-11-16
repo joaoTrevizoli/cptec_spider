@@ -12,6 +12,7 @@ import os
 import shutil
 from request_handler import *
 from datetime import datetime
+from unidecode import unidecode
 
 __author__ = 'joao'
 
@@ -39,7 +40,7 @@ class FileSave(RequestHandler):
 
     def __init__(self, file_name, file_url):
         super(RequestHandler, self).__init__()
-        self.file_name = file_name.lower()
+        self.file_name = unidecode(file_name.lower())
         self.file_url = file_url
 
     def __check_folder(self):
