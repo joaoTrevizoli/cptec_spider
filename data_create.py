@@ -10,19 +10,19 @@ __author__ = 'joao'
 if __name__ == '__main__':
 
     # Araraquara
-    araraquara = GraphInterpreter('araraquara/araraquara_13_11_2015.png',
+    araraquara = GraphInterpreter('araraquara/araraquara_06_11_2015.png',
                                 (0, 10),
                                 'rain')
 
     araraquara.save_values()
 
-    araraquara = GraphInterpreter('araraquara/araraquara_13_11_2015.png',
+    araraquara = GraphInterpreter('araraquara/araraquara_06_11_2015.png',
                                 (18, 35),
                                 'temp')
 
     araraquara.save_values()
 
-    araraquara = GraphInterpreter('araraquara/araraquara_13_11_2015.png',
+    araraquara = GraphInterpreter('araraquara/araraquara_06_11_2015.png',
                                 (30, 100),
                                 'humidity')
 
@@ -33,19 +33,19 @@ if __name__ == '__main__':
 
     # Iracemapolis
 
-    iracemapolis = GraphInterpreter('iracemapolis/iracemapolis_13_11_2015.png',
+    iracemapolis = GraphInterpreter('iracemapolis/iracemapolis_06_11_2015.png',
                                 (0, 10),
                                 'rain')
 
     iracemapolis.save_values()
 
-    iracemapolis = GraphInterpreter('iracemapolis/iracemapolis_13_11_2015.png',
+    iracemapolis = GraphInterpreter('iracemapolis/iracemapolis_06_11_2015.png',
                                 (16, 37),
                                 'temp')
 
     iracemapolis.save_values()
 
-    iracemapolis = GraphInterpreter('iracemapolis/iracemapolis_13_11_2015.png',
+    iracemapolis = GraphInterpreter('iracemapolis/iracemapolis_06_11_2015.png',
                                 (30, 100),
                                 'humidity')
 
@@ -55,19 +55,19 @@ if __name__ == '__main__':
 
     # Pradopolis
 
-    pradopolis = GraphInterpreter('pradopolis/pradopolis_13_11_2015.png',
+    pradopolis = GraphInterpreter('pradopolis/pradopolis_06_11_2015.png',
                                 (0, 10),
                                 'rain')
 
     pradopolis.save_values()
 
-    pradopolis = GraphInterpreter('pradopolis/pradopolis_13_11_2015.png',
+    pradopolis = GraphInterpreter('pradopolis/pradopolis_06_11_2015.png',
                                 (19, 35),
                                 'temp')
 
     pradopolis.save_values()
 
-    pradopolis = GraphInterpreter('pradopolis/pradopolis_13_11_2015.png',
+    pradopolis = GraphInterpreter('pradopolis/pradopolis_06_11_2015.png',
                                 (40, 100),
                                 'humidity')
 
@@ -77,19 +77,19 @@ if __name__ == '__main__':
 
     # Quirinopolis
 
-    quirinopolis = GraphInterpreter('quirinopolis/quirinopolis_13_11_2015.png',
+    quirinopolis = GraphInterpreter('quirinopolis/quirinopolis_06_11_2015.png',
                                 (0, 10),
                                 'rain')
 
     quirinopolis.save_values()
 
-    quirinopolis = GraphInterpreter('quirinopolis/quirinopolis_13_11_2015.png',
+    quirinopolis = GraphInterpreter('quirinopolis/quirinopolis_06_11_2015.png',
                                 (19, 34),
                                 'temp')
 
     quirinopolis.save_values()
 
-    quirinopolis = GraphInterpreter('quirinopolis/quirinopolis_13_11_2015.png',
+    quirinopolis = GraphInterpreter('quirinopolis/quirinopolis_06_11_2015.png',
                                 (40, 100),
                                 'humidity')
 
