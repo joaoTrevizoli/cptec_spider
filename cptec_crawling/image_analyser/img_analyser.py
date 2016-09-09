@@ -213,11 +213,11 @@ class GraphInterpreter(object):
         if not os.path.exists(dir_name):
             for data_list in self.converted_values():
                 with open(f_name, 'a') as f:
-                    wr = csv.writer(f)
+                    wr = csv.writer(f, delimiter=';')
                     wr.writerow(data_list)
         else:
             os.remove(f_name)
             for data_list in self.converted_values():
                 with open(f_name, 'a') as f:
-                    wr = csv.writer(f)
+                    wr = csv.writer(f, delimiter=';')
                     wr.writerow(data_list)
